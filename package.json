@@ -1,0 +1,11 @@
+{
+  "name": "pursuneer",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "pursuneer",
+  "homepage": "https://github.com/pursuneer/pursuneer",
+  "license": "ISC"
+}
