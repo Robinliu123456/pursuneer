@@ -3,13 +3,18 @@
   "description": "",
   "scripts": {
     "build": "tsup",
-    "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages"
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
+    "change": "changeset",
+    "change:version": "GITHUB_TOKEN=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 changeset version",
+    "publish": "pnpm build && pnpm publish:only",
+    "publish:only": "changeset publish"
   },
   "keywords": [],
   "author": "pursuneer",
   "homepage": "https://github.com/pursuneer/pursuneer",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.25.2",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
